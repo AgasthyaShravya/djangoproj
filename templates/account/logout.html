@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+    <style>
+        body {
+            background-image: url("/static/img/logout.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+        }
+
+        /* Center-align the content */
+        h1 {
+            text-align: center;
+            color: Black; /* Set the text color */
+            font-size: 36px; /* Set the font size */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color:#B7E5B4;
+            color: Black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: White;
+        }
+    </style>
+</head>
+<body>
+    <h1>Successfully logged out</h1>
+    <button onclick="window.location.href='{% url 'store:login' %}'">Click here to login</button>
+</body>
+</html>
